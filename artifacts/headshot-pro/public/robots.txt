@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /result
+Disallow: /payment
+
+Sitemap: https://headshotcv.replit.app/sitemap.xml

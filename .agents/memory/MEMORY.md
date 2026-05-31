@@ -1,0 +1,3 @@
+- [OpenAI PDF+image via chat completions](openai-pdf-chat-completions.md) — chat.completions accepts PDF (type:"file") and images (image_url) through Replit proxy on gpt-5-mini; verified, don't "fix" PDF on a reviewer's assumption.
+- [Video loop screenshots](video-loop-screenshot.md) — screenshot tool reloads the page so it always captures scene 0 of looping videos.
+- [Demo-video style](demo-video-style.md) — demo-video is an authentic iOS screen-recording style, 9:16, silent by design.

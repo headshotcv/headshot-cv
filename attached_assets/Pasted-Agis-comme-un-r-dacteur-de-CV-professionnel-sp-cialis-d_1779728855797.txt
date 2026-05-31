@@ -1,0 +1,23 @@
+Agis comme un rédacteur de CV professionnel spécialisé dans le personal branding. Je veux que tu réécrives l'intégralité des textes de mon CV pour qu'ils sonnent beaucoup plus humains, authentiques et chaleureux, en évitant le jargon de robot ou les phrases toutes faites d'école de commerce. 
+
+Voici les directives à suivre pour la réécriture :
+1. Adopte un ton dynamique, direct et axé sur l'action concrète.
+2. Crée un lien logique et humain entre mon Master en Marketing (HEC Paris) et mon expérience terrain de Barman. Montre que mon expérience en restauration m'a appris la psychologie client, la gestion du rush, l'optimisation des ventes en direct et le management d'équipe, ce qui fait de moi un marketeur pragmatique et un vrai couteau suisse.
+3. Supprime les termes trop pompeux comme "stratégies omnicanales axées sur la performance" et remplace-les par des phrases qui montrent mon impact réel.
+
+Voici les textes actuels à réécrire entièrement :
+
+[PROFIL]
+Matthieu Van Gyseghem, Directeur marketing digital. Passionné par l'impact business et le contact humain. Diplômé d'HEC Paris et fort d'une expérience terrain solide en restauration, j'allie vision stratégique et pragmatisme opérationnel. J'utilise la data et l'automatisation pour booster les ventes de manière concrète, tout en gardant une approche centrée sur l'expérience client.
+
+[RÉALISATIONS CLÉS]
+* Création et test en direct d'une nouvelle carte de cocktails saisonniers, ajustée en continu selon les retours des clients pour maximiser les ventes.
+* Réorganisation complète de l'espace de travail et de la gestion des stocks pour fluidifier le service et absorber les pics d'activité en soirée.
+* Conception et animation de soirées à thème (quiz, blind tests), fidélisant une clientèle régulière et augmentant le chiffre d'affaires des jours plus calmes.
+
+[EXPÉRIENCE PROFESSIONNELLE]
+Barman – Amusoir (Paris) | Sept 2022 - Mars 2024
+* Stratégie de vente : Augmentation de +30% des ventes de cocktails grâce à la création d'une nouvelle carte et à des techniques de vente additionnelle (up-selling).
+* Gestion du flux et de l'expérience client : Accueil et service fluide pour plus de 120 clients par soirée, en maintenant un excellent relationnel sous pression.
+* Optimisation opérationnelle : Réduction de 20% du gaspillage grâce à une refonte de la rotation des stocks.
+* Management : Recrutement, intégration et formation de 5 apprentis pour optimiser la productivité de l'équipe.

@@ -1,0 +1,487 @@
+uploads = []
+
+[[generated]]
+id = "BezFfzJYU8wT5beDCdGYF"
+uri = "file://artifacts/headshot-pro/public/exemples/lea.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "TdgdvAtYUZfMWScVbgm8N"
+uri = "file://artifacts/headshot-pro/public/exemples/karim.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "8BKQZovEIxMR7aoDPZ92I"
+uri = "file://artifacts/headshot-pro/public/exemples/sofia.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "QwqBiFP9wD8qLHUiWFoJy"
+uri = "file://artifacts/headshot-pro/public/exemples/marc.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "qGIBoxFJZU_W2iviN-W1c"
+uri = "file://artifacts/headshot-pro/public/exemples/naima.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "mbsthrt0LLRHKc3PRBuUn"
+uri = "file://artifacts/headshot-pro/public/exemples/elodie.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "YuO7H4H1HoQOLjAPYdpYF"
+uri = "file://artifacts/headshot-pro/public/exemples/pierre.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "YP4k06OI2xOaQbGh1BXOt"
+uri = "file://artifacts/headshot-pro/public/exemples/hugo.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "eK6uMt7HGeWLwsQGWlkox"
+uri = "file://artifacts/headshot-pro/public/exemples/grace.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "oasxZmtrVFMqQi1UH93cl"
+uri = "file://artifacts/headshot-pro/public/exemples/daniel.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "t-DXPSiWgVnE4mr5bTKW3"
+uri = "file://artifacts/headshot-pro/public/exemples/mei.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "sGaUx9-soz_Q-x6lJd4hJ"
+uri = "file://artifacts/headshot-pro/public/exemples/liam.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "ezQ2Ns_Xq8pr36Zsz7tEq"
+uri = "file://artifacts/headshot-pro/public/exemples/margaux.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "PQ1o7ikCQEdfAxtDfqrJz"
+uri = "file://attached_assets/generated_images/camille_headshot.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "DmLM-57n46Ypae9gSgPiW"
+uri = "file://attached_assets/generated_images/tropical_leaves_banner.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "jRl5hv7oSul-zqjyPIizi"
+uri = "file://attached_assets/generated_images/thomas_headshot.png"
+type = "image"
+title = "generated_image"
+
+[[generated]]
+id = "DnbBR2ZqmLOktgtdIrgxb"
+uri = "file://attached_assets/generated_images/sarah_headshot.png"
+type = "image"
+title = "generated_image"
+
+[[outputs]]
+id = "EIFjbr7O8_Dznx4-0z19k"
+uri = "file://.local/demo/cv-matthieu-moderne.pdf"
+type = "pdf"
+title = "CV Matthieu - Modèle Moderne"
+
+[[outputs]]
+id = "SOtwDTzKMbQ37-Ri8tRwj"
+uri = "file://.local/demo/cv-matthieu-classique.pdf"
+type = "pdf"
+title = "CV Matthieu - Modèle Classique"
+
+[[outputs]]
+id = "f-nYT9Tw2kWh51VapIGjj"
+uri = "file://.local/demo/cv-matthieu-creatif.pdf"
+type = "pdf"
+title = "CV Matthieu - Modèle Créatif"
+
+[[outputs]]
+id = "i8vUaNW-qRrMRCWc4_nX-"
+uri = "file://attached_assets/tiktok/lea.jpg"
+type = "image"
+title = "Léa — Marketing"
+
+[[outputs]]
+id = "RTwEVy5p8ZJCiqJ_2q9SW"
+uri = "file://attached_assets/tiktok/karim.jpg"
+type = "image"
+title = "Karim — Développeur"
+
+[[outputs]]
+id = "6bvzddFzR08sE3qEqdmQA"
+uri = "file://attached_assets/tiktok/sofia.jpg"
+type = "image"
+title = "Sofia — RH"
+
+[[outputs]]
+id = "nJ_WnXPVJ-u3UosJ1nLO-"
+uri = "file://attached_assets/tiktok/marc.jpg"
+type = "image"
+title = "Marc — Commercial"
+
+[[outputs]]
+id = "QBJmw0woZf0KA1smrqiJ4"
+uri = "file://attached_assets/tiktok/naima.jpg"
+type = "image"
+title = "Naïma — Sage-femme"
+
+[[outputs]]
+id = "H4LUDW4u4jYIbf3BbWaJn"
+uri = "file://attached_assets/tiktok/elodie.jpg"
+type = "image"
+title = "Élodie — Architecte d'intérieur"
+
+[[outputs]]
+id = "yurUHJ8KjuCvhyvncgwUO"
+uri = "file://attached_assets/tiktok/pierre.jpg"
+type = "image"
+title = "Pierre — Manager"
+
+[[outputs]]
+id = "6MgP2lplPChmvjWGN7nRP"
+uri = "file://attached_assets/tiktok/hugo.jpg"
+type = "image"
+title = "Hugo — Étudiant"
+
+[[outputs]]
+id = "pSthnyD7uT54iUSqgYr7c"
+uri = "file://screenshots/cv-vitrine.jpg"
+type = "image"
+title = "Le CV vitrine — style magazine éditorial"
+
+[[outputs]]
+id = "7z-ww6V9qMXK1o6DZZFjK"
+uri = "file://screenshots/cv-tiktok-fr.jpg"
+type = "image"
+title = "Les 12 CV TikTok — format catalogue"
+
+[[outputs]]
+id = "POWU0iZAwWYgZK9reiYsE"
+uri = "file://attached_assets/cv-final-editorial-preview.jpg"
+type = "image"
+title = "Le nouveau CV final — aperçu"
+
+[[outputs]]
+id = "dReKi5pzVHxUN5aUYnRoq"
+uri = "file://attached_assets/cv-final-editorial.pdf"
+type = "pdf"
+title = "Le PDF complet — c'est ce que téléchargent les utilisateurs"
+
+[[outputs]]
+id = "YWFyGVek2ZTLN1qCHABUA"
+uri = "file://attached_assets/cv-final-page1.jpg"
+type = "image"
+title = "Page 1 — nom, profil, expérience, formation"
+
+[[outputs]]
+id = "NUSq844CJo0BV6bcEN3lo"
+uri = "file://attached_assets/cv-final-page2.jpg"
+type = "image"
+title = "Page 2 — langues, intérêts, footer headshotcv.replit.app sur chaque page"
+
+[[outputs]]
+id = "cwI9ht7MSmsQhpjc-ZzSE"
+uri = "file://attached_assets/cv-template-pro.jpg"
+type = "image"
+title = "CV final — vraies icônes + hiérarchie corrigée"
+
+[[outputs]]
+id = "cjTsGvKqOcW2jFb-cY_LW"
+uri = "file://attached_assets/cv-template-pro.pdf"
+type = "pdf"
+title = "Le PDF complet"
+
+[[outputs]]
+id = "GlFIcv14cvb6jOztxotgP"
+uri = "file://attached_assets/cv-template-pro-clean.jpg"
+type = "image"
+title = "CV final avec headshotcv.com"
+
+[[outputs]]
+id = "t3q0wRBZhEb6_PAUuiXIf"
+uri = "file://attached_assets/cv-exemple-fr.jpg"
+type = "image"
+title = "CV FR avec photo — Camille Moreau"
+
+[[outputs]]
+id = "1S2lrPW1du6_OROejXZq9"
+uri = "file://attached_assets/cv-exemple-fr.pdf"
+type = "pdf"
+title = "Le PDF complet"
+
+[[outputs]]
+id = "suWRxexayaO5B_1b3TRUA"
+uri = "file://attached_assets/cv-merged-fr.jpg"
+type = "image"
+title = "Nouveau modèle unique — feuilles + corail + sombre"
+
+[[outputs]]
+id = "w8JEnSVP4KfQ_bBoo71AI"
+uri = "file://attached_assets/cv-merged-fr.pdf"
+type = "pdf"
+title = "Le PDF complet"
+
+[[outputs]]
+id = "u9_-_XiglDREWgf8RG4H3"
+uri = "file://attached_assets/cv-camille.jpg"
+type = "image"
+title = "CV avec photo de profil + fond Paris"
+
+[[outputs]]
+id = "k9r9wtnFQ41xl5eJkn7Fu"
+uri = "file://attached_assets/cv-camille.pdf"
+type = "pdf"
+title = "Le PDF tel qu'il est téléchargé"
+
+[[outputs]]
+id = "jCfTglnxhhXPRFCxnWx6U"
+uri = "file://attached_assets/cv-thomas.jpg"
+type = "image"
+title = "Exemple 2 — Thomas (Développeur)"
+
+[[outputs]]
+id = "LSDll-PmJlb2FnfzVLePP"
+uri = "file://attached_assets/cv-thomas.pdf"
+type = "pdf"
+title = "Thomas — PDF"
+
+[[outputs]]
+id = "E1XqPhwA_CtYEuICWgp-X"
+uri = "file://attached_assets/cv-sarah.jpg"
+type = "image"
+title = "Exemple 3 — Sarah (Marketing)"
+
+[[outputs]]
+id = "ZcyhOlUDhrcxybaNG-r4k"
+uri = "file://attached_assets/cv-sarah.pdf"
+type = "pdf"
+title = "Sarah — PDF"
+
+[[outputs]]
+id = "XLel5DUXqvGLNdiw1QACp"
+uri = "file://attached_assets/tiktok-cv.tar.gz"
+type = "unspecified"
+title = "8 CV format TikTok 9:16 — prêts à poster"
+
+[[outputs]]
+id = "BePrQ2qgL-VquhHABvD0M"
+uri = "file://attached_assets/tiktok-cv/cv-lea.jpg"
+type = "image"
+title = "Léa Marchand — Marketing"
+
+[[outputs]]
+id = "X8aj5CLqcG3S6-6fTnPde"
+uri = "file://attached_assets/tiktok-cv/cv-karim.jpg"
+type = "image"
+title = "Karim Saïdi — Développeur Full-Stack"
+
+[[outputs]]
+id = "PbkoxNA6WhpUomMnYEwpt"
+uri = "file://attached_assets/tiktok-cv/cv-sofia.jpg"
+type = "image"
+title = "Sofia Mendes — Consultante RH"
+
+[[outputs]]
+id = "e4RiSg1BlQA0e8Ld6XhMe"
+uri = "file://attached_assets/tiktok-cv/cv-marc.jpg"
+type = "image"
+title = "Marc Pottier — Key Account Manager"
+
+[[outputs]]
+id = "JHV7PSKTdjNQstdYmk0Kh"
+uri = "file://attached_assets/tiktok-cv/cv-naima.jpg"
+type = "image"
+title = "Naïma Fadel — Sage-femme"
+
+[[outputs]]
+id = "cf-Wtv21mY7DN02Tq-Im_"
+uri = "file://attached_assets/tiktok-cv/cv-elodie.jpg"
+type = "image"
+title = "Élodie Vasseur — Architecte d'intérieur"
+
+[[outputs]]
+id = "mrTr9Al2tesbHnrUoc6Fk"
+uri = "file://attached_assets/tiktok-cv/cv-pierre.jpg"
+type = "image"
+title = "Pierre Aubert — Manager reconversion"
+
+[[outputs]]
+id = "0vKpVWb89GmGuc1rpJukf"
+uri = "file://attached_assets/tiktok-cv/cv-hugo.jpg"
+type = "image"
+title = "Hugo Mercier — Étudiant école de commerce"
+
+[[outputs]]
+id = "flnz8K0b1PQU_tuvS2TeL"
+uri = "file://attached_assets/cv-clients.tar.gz"
+type = "unspecified"
+title = "8 CV (5 pros + 3 étudiants) — PDF + aperçus JPG"
+
+[[outputs]]
+id = "FYWqjUUHojUrAkTG2VTzY"
+uri = "file://attached_assets/cv-clients/cv-camille.pdf"
+type = "pdf"
+title = "Camille Moreau — Directrice Artistique (PDF)"
+
+[[outputs]]
+id = "e3xTKZ58c1VZDzZVWIANV"
+uri = "file://attached_assets/cv-clients/cv-karim.pdf"
+type = "pdf"
+title = "Karim Benali — Développeur Full-Stack (PDF)"
+
+[[outputs]]
+id = "LETx8r3gnUbIsY5Bs6Pj_"
+uri = "file://attached_assets/cv-clients/cv-lea.pdf"
+type = "pdf"
+title = "Léa Dubois — Chef de Projet Marketing (PDF)"
+
+[[outputs]]
+id = "xK8vZOyBH2rBX5CsvzVr4"
+uri = "file://attached_assets/cv-clients/cv-marc.pdf"
+type = "pdf"
+title = "Marc Lefèvre — Consultant Finance (PDF)"
+
+[[outputs]]
+id = "KFgS439lfOs6n9_s2qUb8"
+uri = "file://attached_assets/cv-clients/cv-sofia.pdf"
+type = "pdf"
+title = "Sofia Garcia — UX Designer (PDF)"
+
+[[outputs]]
+id = "s5yUbsBFItBrQQTf5KO5q"
+uri = "file://attached_assets/cv-clients/cv-margaux.pdf"
+type = "pdf"
+title = "Margaux Petit — Étudiante Marketing (PDF)"
+
+[[outputs]]
+id = "wtz2kwUJTc-qt_xB5tKP-"
+uri = "file://attached_assets/cv-clients/cv-liam.pdf"
+type = "pdf"
+title = "Liam Bertrand — Étudiant Ingénieur (PDF)"
+
+[[outputs]]
+id = "tQQFMIjVXWXgNl7ONhcvp"
+uri = "file://attached_assets/cv-clients/cv-mei.pdf"
+type = "pdf"
+title = "Mei Tran — Étudiante Design (PDF)"
+
+[[outputs]]
+id = "Qp4bZx2bsU0YWyN-qXRL0"
+uri = "file://attached_assets/cv-clients/cv-margaux.jpg"
+type = "image"
+title = "Margaux Petit — APRÈS (pro)"
+
+[[outputs]]
+id = "9OowX1QdYXLjj00F1I_AV"
+uri = "file://attached_assets/cv-clients/cv-liam.jpg"
+type = "image"
+title = "Liam Bertrand — APRÈS (pro)"
+
+[[outputs]]
+id = "VnpTWorCIISiFCt56OQMK"
+uri = "file://attached_assets/cv-clients/cv-mei.jpg"
+type = "image"
+title = "Mei Tran — APRÈS (pro)"
+
+[[outputs]]
+id = "htZixCBRXKkn4tm0DC-_i"
+uri = "file://attached_assets/cv-clients/cv-camille.jpg"
+type = "image"
+title = "Camille Moreau — APRÈS (pro)"
+
+[[outputs]]
+id = "6508PAADH7GyK1dYIpSPx"
+uri = "file://attached_assets/cv-clients/cv-karim.jpg"
+type = "image"
+title = "Karim Benali — APRÈS (pro)"
+
+[[outputs]]
+id = "B6SjtXz52IF9onuXyrq-9"
+uri = "file://attached_assets/cv-clients/cv-lea.jpg"
+type = "image"
+title = "Léa Dubois — APRÈS (pro)"
+
+[[outputs]]
+id = "iL6qfbZoR8MBKNsfscOVB"
+uri = "file://attached_assets/cv-clients/cv-marc.jpg"
+type = "image"
+title = "Marc Lefèvre — APRÈS (pro)"
+
+[[outputs]]
+id = "Gy5PCDuHLS3A1bWFIMLew"
+uri = "file://attached_assets/cv-clients/cv-sofia.jpg"
+type = "image"
+title = "Sofia Garcia — APRÈS (pro)"
+
+[[outputs]]
+id = "1TMmuBreDlHnVV3fQJ7Up"
+uri = "file://exports/cv-lea-moche.jpg"
+type = "image"
+title = "Léa Dubois — AVANT (moche)"
+
+[[outputs]]
+id = "dn7sxg8KbiLLF5R56eeut"
+uri = "file://exports/cv-camille-moche.jpg"
+type = "image"
+title = "Camille Moreau — AVANT (moche)"
+
+[[outputs]]
+id = "myWl1A7sKirx04GMpTq67"
+uri = "file://exports/cv-karim-moche.jpg"
+type = "image"
+title = "Karim Benali — AVANT (moche)"
+
+[[outputs]]
+id = "0_PzYrUWjc-_-OLEwsyeu"
+uri = "file://exports/cv-liam-moche.jpg"
+type = "image"
+title = "Liam Bertrand — AVANT (moche)"
+
+[[outputs]]
+id = "VIh2ZfjlHkZdVqwbjzfoQ"
+uri = "file://exports/cv-marc-moche.jpg"
+type = "image"
+title = "Marc Lefèvre — AVANT (moche)"
+
+[[outputs]]
+id = "T8pC7Lyvp18t0mvlX_tk_"
+uri = "file://exports/cv-margaux-moche.jpg"
+type = "image"
+title = "Margaux Petit — AVANT (moche)"
+
+[[outputs]]
+id = "DD8X-XG8KuCDQAh2iOLTZ"
+uri = "file://exports/cv-mei-moche.jpg"
+type = "image"
+title = "Mei Tran — AVANT (moche)"
+
+[[outputs]]
+id = "y67K1M4G8Hg1Gcruqkdrt"
+uri = "file://exports/cv-sofia-moche.jpg"
+type = "image"
+title = "Sofia Garcia — AVANT (moche)"

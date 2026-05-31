@@ -1,0 +1,28 @@
+Please rewrite all the text content of the resume to make it sound completely human, natural, and authentic. Right now, it sounds too much like "AI-generated jargon" (avoid corporate buzzwords like "optimiser l'expérience client" or "dynamiser le chiffre d'affaires"). 
+
+Apply these text changes while keeping the single-page layout:
+
+1. PROFIL (Summary):
+Rewrite it to be short, punchy, and professional. 
+Example: "Barman passionné et dynamique avec une solide expérience en service et mixologie. Réactif et habitué aux coups de feu en salle comme au comptoir, je mise sur un excellent relationnel pour fidéliser la clientèle et garantir une ambiance chaleureuse."
+
+2. RÉALISATIONS CLÉS (Key Achievements):
+Make them sound like real, concrete human achievements, not corporate metrics.
+- Change the 1st bullet to: "Création d'une nouvelle carte de cocktails saisonniers qui a beaucoup plu à la clientèle."
+- Change the 2nd bullet to: "Optimisation de l'organisation du bar pour fluidifier le service et réduire l'attente les soirs de grande affluence."
+- Change the 3rd bullet to: "Mise en place de soirées à thème réussies (quiz, blind tests) ayant permis de dynamiser les milieux de semaine."
+
+3. EXPÉRIENCE PROFESSIONNELLE (Experience - Amusoir):
+Rewrite the bullet points to sound like a real bartender describing their job:
+- "Accueil, conseil et service d'une clientèle variée au comptoir et en salle."
+- "Préparation de cocktails classiques et créations maison, gestion des envois sous pression."
+- "Gestion complète de la caisse, ouverture/clôture du bar et tenue impeccable du poste de travail."
+- "Encadrement et intégration des nouveaux serveurs au sein de l'équipe."
+
+4. COMPÉTENCES & QUALITÉS (Sidebar tags):
+Simplify the tags so they look like real human skills.
+- Instead of "Application des normes d'hygiène et sécurité", just put "Normes HACCP".
+- Instead of "Communication et relation client", just put "Sens du contact".
+- Clean up other tags to be short and realistic (e.g., "Mixologie", "Gestion de caisse", "Service au plateau", "Rapidité", "Esprit d'équipe", "Résistance au stress").
+
+Make sure the final text flows naturally in French and sounds like a real professional candidate!

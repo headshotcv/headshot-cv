@@ -1,0 +1,460 @@
+openapi: 3.1.0
+info:
+  # Do not change the title, if the title changes, the import paths will be broken
+  title: Api
+  version: 0.1.0
+  description: HeadshotPro API — selfie to LinkedIn professional photo
+servers:
+  - url: /api
+    description: Base API path
+tags:
+  - name: health
+    description: Health operations
+  - name: jobs
+    description: Headshot transformation jobs
+  - name: payments
+    description: Payment operations
+  - name: feedback
+    description: User feedback / site rating
+  - name: cv
+    description: CV import and parsing
+paths:
+  /healthz:
+    get:
+      operationId: healthCheck
+      tags: [health]
+      summary: Health check
+      responses:
+        "200":
+          description: Healthy
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/HealthStatus"
+
+  /jobs:
+    post:
+      operationId: createJob
+      tags: [jobs]
+      summary: Upload selfie and create a transformation job
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/JobInput"
+      responses:
+        "201":
+          description: Job created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Job"
+
+  /jobs/{id}:
+    get:
+      operationId: getJob
+      tags: [jobs]
+      summary: Get a transformation job by ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Job found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Job"
+        "404":
+          description: Not found
+
+  /jobs/{id}/confirm-payment:
+    post:
+      operationId: confirmJobPayment
+      tags: [jobs]
+      summary: Confirm payment for a job and trigger AI processing
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/PaymentConfirmInput"
+      responses:
+        "200":
+          description: Payment confirmed, processing started
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Job"
+
+  /payments/create-checkout:
+    post:
+      operationId: createCheckout
+      tags: [payments]
+      summary: Create a Stripe checkout session for a job
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CheckoutInput"
+      responses:
+        "200":
+          description: Checkout session created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CheckoutSession"
+
+  /feedback:
+    post:
+      operationId: createFeedback
+      tags: [feedback]
+      summary: Submit a site rating + feedback after the user received their CV
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/FeedbackInput"
+      responses:
+        "201":
+          description: Feedback recorded
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Feedback"
+
+  /feedback/{jobId}:
+    get:
+      operationId: getFeedbackForJob
+      tags: [feedback]
+      summary: Check if a feedback was already submitted for a given job
+      parameters:
+        - name: jobId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Feedback"
+        "404":
+          description: No feedback yet
+
+  /cv/import:
+    post:
+      operationId: importCv
+      tags: [cv]
+      summary: Extract structured CV data from an uploaded existing CV (PDF or image)
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CvImportInput"
+      responses:
+        "200":
+          description: CV parsed
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CvImportResult"
+
+  /payments/stats:
+    get:
+      operationId: getPaymentStats
+      tags: [payments]
+      summary: Get aggregate stats (total jobs, completed, revenue)
+      responses:
+        "200":
+          description: Stats
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PaymentStats"
+
+components:
+  schemas:
+    HealthStatus:
+      type: object
+      properties:
+        status:
+          type: string
+      required:
+        - status
+
+    Job:
+      type: object
+      required: [id, status, createdAt]
+      properties:
+        id:
+          type: string
+        status:
+          type: string
+          enum: [pending_payment, processing, completed, failed]
+        style:
+          $ref: "#/components/schemas/PhotoStyle"
+        imageDataUrl:
+          type: ["string", "null"]
+        resultDataUrl:
+          type: ["string", "null"]
+        cvData:
+          oneOf:
+            - $ref: "#/components/schemas/CVData"
+            - type: "null"
+        cvTemplate:
+          $ref: "#/components/schemas/CVTemplate"
+        cvPdfDataUrl:
+          type: ["string", "null"]
+        stripePaymentIntentId:
+          type: ["string", "null"]
+        createdAt:
+          type: string
+
+    PhotoStyle:
+      type: string
+      enum: [classique, moderne, decontracte, exterieur]
+      description: Visual style for the AI-generated headshot
+
+    CVTemplate:
+      type: string
+      enum: [classique]
+      description: Visual template for the generated CV PDF
+
+    CVExperience:
+      type: object
+      required: [title, company, startDate]
+      properties:
+        title: { type: string }
+        company: { type: string }
+        location: { type: string }
+        startDate: { type: string }
+        endDate: { type: string }
+        description: { type: string }
+
+    CVEducation:
+      type: object
+      required: [degree, school, startDate]
+      properties:
+        degree: { type: string }
+        school: { type: string }
+        location: { type: string }
+        startDate: { type: string }
+        endDate: { type: string }
+        description: { type: string }
+
+    CVLanguage:
+      type: object
+      required: [name, level]
+      properties:
+        name: { type: string }
+        level: { type: string }
+
+    CVCertification:
+      type: object
+      required: [name]
+      properties:
+        name: { type: string }
+        issuer: { type: string }
+        year: { type: string }
+
+    CVProject:
+      type: object
+      required: [name]
+      properties:
+        name: { type: string }
+        description: { type: string }
+        link: { type: string }
+
+    CVReference:
+      type: object
+      required: [name]
+      properties:
+        name: { type: string }
+        role: { type: string }
+        contact: { type: string }
+
+    CVData:
+      type: object
+      required: [firstName, lastName]
+      properties:
+        firstName: { type: string }
+        lastName: { type: string }
+        jobTitle: { type: string }
+        email: { type: string }
+        phone: { type: string }
+        address: { type: string }
+        city: { type: string }
+        website: { type: string }
+        linkedin: { type: string }
+        summary:
+          type: string
+          description: Short profile/summary paragraph
+        experiences:
+          type: array
+          items: { $ref: "#/components/schemas/CVExperience" }
+        education:
+          type: array
+          items: { $ref: "#/components/schemas/CVEducation" }
+        skills:
+          type: array
+          items: { type: string }
+        languages:
+          type: array
+          items: { $ref: "#/components/schemas/CVLanguage" }
+        certifications:
+          type: array
+          items: { $ref: "#/components/schemas/CVCertification" }
+        projects:
+          type: array
+          items: { $ref: "#/components/schemas/CVProject" }
+        references:
+          type: array
+          items: { $ref: "#/components/schemas/CVReference" }
+        interests:
+          type: array
+          items: { type: string }
+
+    JobInput:
+      type: object
+      required: [imageDataUrl, style, cvData, cvTemplate]
+      properties:
+        imageDataUrl:
+          type: string
+          description: Base64-encoded data URL of the uploaded selfie
+        style:
+          $ref: "#/components/schemas/PhotoStyle"
+        cvData:
+          $ref: "#/components/schemas/CVData"
+        cvTemplate:
+          $ref: "#/components/schemas/CVTemplate"
+
+    CvImportInput:
+      type: object
+      required: [fileDataUrl]
+      properties:
+        fileDataUrl:
+          type: string
+          description: Base64-encoded data URL of the existing CV (PDF or image)
+
+    CvImportResult:
+      type: object
+      description: Best-effort structured data extracted from an existing CV. All fields optional.
+      properties:
+        firstName: { type: string }
+        lastName: { type: string }
+        jobTitle: { type: string }
+        email: { type: string }
+        phone: { type: string }
+        address: { type: string }
+        city: { type: string }
+        website: { type: string }
+        linkedin: { type: string }
+        summary: { type: string }
+        experiences:
+          type: array
+          items: { $ref: "#/components/schemas/CVExperience" }
+        education:
+          type: array
+          items: { $ref: "#/components/schemas/CVEducation" }
+        skills:
+          type: array
+          items: { type: string }
+        languages:
+          type: array
+          items: { $ref: "#/components/schemas/CVLanguage" }
+        certifications:
+          type: array
+          items: { $ref: "#/components/schemas/CVCertification" }
+        projects:
+          type: array
+          items: { $ref: "#/components/schemas/CVProject" }
+        references:
+          type: array
+          items: { $ref: "#/components/schemas/CVReference" }
+        interests:
+          type: array
+          items: { type: string }
+
+    PaymentConfirmInput:
+      type: object
+      required: [stripePaymentIntentId]
+      properties:
+        stripePaymentIntentId:
+          type: string
+
+    CheckoutInput:
+      type: object
+      required: [jobId]
+      properties:
+        jobId:
+          type: string
+
+    CheckoutSession:
+      type: object
+      required: [url, sessionId]
+      properties:
+        url:
+          type: string
+        sessionId:
+          type: string
+
+    FeedbackInput:
+      type: object
+      required: [jobId, rating]
+      properties:
+        jobId: { type: string }
+        rating: { type: integer, minimum: 1, maximum: 5 }
+        easeOfUse: { type: integer, minimum: 1, maximum: 5 }
+        photoQuality: { type: integer, minimum: 1, maximum: 5 }
+        cvQuality: { type: integer, minimum: 1, maximum: 5 }
+        priceFeeling:
+          type: string
+          enum: [cheap, fair, expensive]
+        wouldRecommend: { type: boolean }
+        hadIssue: { type: boolean }
+        issueText: { type: string }
+        comment: { type: string }
+
+    Feedback:
+      type: object
+      required: [id, jobId, rating, createdAt]
+      properties:
+        id: { type: integer }
+        jobId: { type: string }
+        rating: { type: integer }
+        easeOfUse: { type: ["integer", "null"] }
+        photoQuality: { type: ["integer", "null"] }
+        cvQuality: { type: ["integer", "null"] }
+        priceFeeling: { type: ["string", "null"] }
+        wouldRecommend: { type: ["boolean", "null"] }
+        hadIssue: { type: ["boolean", "null"] }
+        issueText: { type: ["string", "null"] }
+        comment: { type: ["string", "null"] }
+        createdAt: { type: string }
+
+    PaymentStats:
+      type: object
+      required: [totalJobs, completedJobs, processingJobs]
+      properties:
+        totalJobs:
+          type: integer
+        completedJobs:
+          type: integer
+        processingJobs:
+          type: integer

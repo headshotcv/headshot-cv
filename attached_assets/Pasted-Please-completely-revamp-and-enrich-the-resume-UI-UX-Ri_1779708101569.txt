@@ -1,0 +1,23 @@
+Please completely revamp and enrich the resume UI/UX. Right now, it looks very empty and unprofessional. We need a modern, visually stunning, and content-rich resume that makes people want to click and use this SaaS template.
+
+Keep the general 2-column layout (dark blue sidebar on the left, white main content on the right), but apply the following changes:
+
+1. Sidebar Enhancements (Left):
+- Profile Picture: Make it perfectly circular with a subtle white or light-gray border.
+- Name & Title: Increase the font size of "Matthieu Dupont". Make "Barman" look like a sleek subtitle (maybe a lighter gray or slightly smaller font).
+- Contact: Add small, modern icons (using FontAwesome or Lucide icons) next to the email, phone, and address.
+- Skills (Compétences): Instead of just "Je suis rapide", make it a list of professional skills with visual proficiency bars or tags (e.g., "Service client", "Gestion de caisse", "Mixologie", "Rapidité d'exécution").
+- Languages: Make it look cleaner (e.g., "Français (Langue maternelle)", "Anglais (Courant)").
+- Interests: Add 2-3 more interests with small bullet points or icons (e.g., Photographie, Voyages, Mixologie).
+
+2. Main Content Enhancements (Right):
+- Profile (Summary): Expand "Je suis quelqu'un de passionné" into a compelling 3-sentence professional summary for an experienced bartender.
+- Add a "Professional Experience" Section (Expériences Professionnelles): This is completely missing. Add 2 or 3 realistic past jobs (e.g., Head Bartender at a well-known lounge, Bartender at a busy city center bistro). Include dates, company names, and 3 bullet points of responsibilities/achievements for each.
+- Add an "Education & Certifications" Section (Formation): Add a relevant degree or hospitality certification (e.g., CQP Serveur, Formation en Mixologie, or Bac Professionnel Hôtellerie).
+
+3. Overall Styling & Layout:
+- Typography: Use a modern, highly readable sans-serif font (like Inter, Roboto, or Poppins).
+- Spacing & Margins: Fix the padding so the text doesn't look cramped against the edges, and balance the white space on the right side so it feels full and premium.
+- Responsive Design: Ensure the layout looks perfect on both desktop views and mobile screens.
+
+Let's make this resume look incredibly polished and professional!
