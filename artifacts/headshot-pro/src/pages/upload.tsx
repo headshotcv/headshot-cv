@@ -827,6 +827,7 @@ export default function Upload() {
       canNext: () => true,
       render: () => (
         <div className="space-y-6">
+          <BlurredCVPreview />
           <div className="bg-secondary/40 border border-border rounded-xl p-5">
             <p className="text-sm font-semibold mb-3">Récapitulatif</p>
             <ul className="text-sm text-muted-foreground space-y-1.5">
@@ -922,6 +923,46 @@ export default function Upload() {
 }
 
 // ---------- Small UI helpers ----------
+function BlurredCVPreview() {
+  return (
+    <div>
+      <p className="text-xs text-muted-foreground mb-2">Aperçu de votre CV généré</p>
+      <div className="relative rounded-xl overflow-hidden border border-border">
+        <div className="bg-white p-5 text-[9px] leading-snug text-gray-800 select-none" style={{ filter: "blur(8px)" }}>
+          <div className="flex gap-4 mb-4">
+            <div className="w-14 h-16 rounded bg-slate-200 shrink-0" />
+            <div className="flex-1 pt-1">
+              <p className="text-sm font-bold text-gray-900 mb-0.5">Marie Laurent</p>
+              <p className="text-[10px] text-gray-500 mb-2">Responsable marketing digital</p>
+              <p className="text-gray-400">marie.laurent@email.fr · 06 12 34 56 78 · Paris</p>
+            </div>
+          </div>
+          <p className="text-[8px] font-semibold uppercase tracking-wider text-gray-400 mb-1">Profil</p>
+          <p className="text-gray-600 mb-3">
+            Professionnelle passionnée avec 8 ans d'expérience en stratégie digitale et gestion de campagnes multicanales pour des marques B2B et B2C.
+          </p>
+          <p className="text-[8px] font-semibold uppercase tracking-wider text-gray-400 mb-1">Expérience</p>
+          <div className="mb-2">
+            <p className="font-semibold text-gray-800">Chef de projet marketing — Agence Nova</p>
+            <p className="text-gray-400 mb-0.5">2021 – Présent · Paris</p>
+            <p className="text-gray-600">Pilotage de campagnes digitales, +40 % de leads qualifiés en 18 mois.</p>
+          </div>
+          <div className="mb-3">
+            <p className="font-semibold text-gray-800">Chargée de communication — Groupe Altis</p>
+            <p className="text-gray-400 mb-0.5">2018 – 2021 · Lyon</p>
+            <p className="text-gray-600">Refonte de l'identité visuelle et gestion des réseaux sociaux.</p>
+          </div>
+          <p className="text-[8px] font-semibold uppercase tracking-wider text-gray-400 mb-1">Formation</p>
+          <p className="text-gray-600 mb-3">Master Marketing Digital — ESCP Business School, 2018</p>
+          <p className="text-[8px] font-semibold uppercase tracking-wider text-gray-400 mb-1">Compétences</p>
+          <p className="text-gray-600">SEO/SEA · Google Analytics · HubSpot · Canva · Gestion de projet Agile</p>
+        </div>
+        <div className="absolute inset-0 bg-black/40 pointer-events-none" />
+      </div>
+    </div>
+  );
+}
+
 function Field({ label, value, onChange, placeholder, type = "text", className = "", autoFocus = false }: {
   label: string; value: string; onChange: (v: string) => void; placeholder?: string; type?: string; className?: string; autoFocus?: boolean;
 }) {
