@@ -51,3 +51,4 @@ Thumbs.db
 # Large archives (never commit project zips)
 *.zip
 projet.zip
+.vercel
