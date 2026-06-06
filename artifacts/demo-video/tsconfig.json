@@ -1,1 +1,1 @@
-{"extends": "../../tsconfig.base.json","compilerOptions": {"noEmit": true,"skipLibCheck": true,"noUnusedLocals": false,"noUnusedParameters": false,"strict": false},"include": ["src/**/*"],"exclude": ["node_modules","build","dist"]}
+{"extends":"../../tsconfig.base.json","compilerOptions":{"noEmit":true,"skipLibCheck":true,"noUnusedLocals":false,"noUnusedParameters":false,"strict":false}}
