@@ -5,7 +5,7 @@
   "compilerOptions": {
     "incremental": true,
     "tsBuildInfoFile": ".tsbuildinfo",
-    "noEmit": true,
+    "noEmit": true, "skipLibCheck": true,
     "jsx": "preserve",
     "resolveJsonModule": true,
     "allowImportingTsExtensions": true,
